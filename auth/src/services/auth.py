@@ -44,6 +44,7 @@ def process_login(authorization, collection) -> dict:
         username, password = decoded_credentials.split(":", 1)
 
         # Load users from database
+        #TODO loading all users can cause performance issue on large scale data
         users = collection.find({})
 
         # Check if the provided username and password match any user in the file
