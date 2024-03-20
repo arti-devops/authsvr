@@ -1,0 +1,14 @@
+USERS COLLECTION
+_id         :ObjectId
+username    :string (email)
+password    :string (to be hashed)
+role        :string (ADMIN,USER,SUPERVISOR,MANAGER)
+avatar      :string (link to be generated automatically)
+
+Exemple (Current)
+
+_id: ObjectId('65801cd859bf2c1c635cc7b1')
+username: "fname.lname@org.ext"
+password: "plain text password"
+role: "admin"
+avatar: "http://localhost:8000/file/avatar/lynda.debey@arti.local.jpg"
